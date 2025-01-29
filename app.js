@@ -19,3 +19,12 @@ function mostrarLista() {
     elementoHTML.appendChild(li);
   }
 }
+function sortearAmigo() {
+  if (amigos != "") {
+    let indice = Math.floor(Math.random() * amigos.length);
+    let elementoHTML = document.querySelector("#resultado");
+    elementoHTML.innerHTML = `El amigo sorteado es: ${amigos[indice]}`
+  } else {
+    alert("No hay nombres añadidos");
+  }
+}
